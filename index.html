@@ -141,10 +141,16 @@
             50% { transform: translateX(-50%) translateY(8px); }
         }
         
-        /* Sections */
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    @media (max-width: 640px) {
         section {
-            padding: 80px 0;
+            padding: 40px 0;
         }
+    }
         
         .section-label {
             font-size: 12px;
@@ -166,7 +172,13 @@
             font-size: 1.1rem;
             color: var(--muted);
             max-width: 600px;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
+        }
+        
+        @media (max-width: 640px) {
+            .section-subtitle {
+                margin-bottom: 20px;
+            }
         }
         
         /* TL;DR Box */
@@ -212,7 +224,7 @@
         
         .timeline-item {
             position: relative;
-            margin-bottom: 48px;
+            margin-bottom: 32px;
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
@@ -351,9 +363,26 @@
         }
         
         .verdict .stars {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 4px;
+            color: var(--muted);
+            letter-spacing: 2px;
+        }
+        
+        .verdict .rating-num {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        
+        .verdict .rating-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--muted);
+            margin-bottom: 20px;
         }
         
         .verdict p {
@@ -554,7 +583,7 @@
 <section>
     <div class="container">
         <div class="verdict fade-in">
-            <div class="stars">☆☆☆☆☆</div>
+            <div class="rating-num">0 / 5</div>
             <h2>Our Verdict</h2>
             <p>
                 <strong>Do not use Kinnan Scaping.</strong> They damaged our property, refused to make it right, and then sued us for the privilege. Brandon Kinnan may be in the landscaping business, but accountability isn't part of his service.
