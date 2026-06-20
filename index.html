@@ -60,13 +60,13 @@
         /* HERO — full image background */
         .hero {
             position: relative;
-            min-height: 100vh;
+            min-height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 80px 24px 100px;
+            padding: 80px 24px 60px;
             overflow: hidden;
         }
         
@@ -205,7 +205,9 @@
             border-left: 5px solid var(--accent);
             border-radius: var(--radius);
             padding: 36px;
-            margin-bottom: 60px;
+            margin-top: 48px;
+            margin-bottom: 0;
+            text-align: left;
         }
         
         .tldr-box h3 {
@@ -417,13 +419,13 @@
         
         /* Responsive */
         @media (max-width: 640px) {
-            .hero { min-height: 90vh; padding: 60px 20px 80px; }
+            .hero { padding: 60px 20px 60px; }
             .hero-stats { gap: 28px; }
             .timeline { padding-left: 32px; }
             .timeline-item::before { left: -25px; }
             .gallery-grid { grid-template-columns: 1fr; }
             .verdict { padding: 32px 20px; }
-            .tldr-box { padding: 24px; }
+            .tldr-box { padding: 24px; margin-top: 36px; }
             section { padding: 40px 0; }
         }
     </style>
@@ -526,20 +528,15 @@
                 <div class="label">Driveway Replacement Cost</div>
             </div>
         </div>
-    </div>
-</header>
-
-<main>
-
-<!-- TL;DR -->
-<section>
-    <div class="container">
+        
         <div class="tldr-box fade-in">
             <h3>⚡ TL;DR — What Kinnan Scaping Did to Us</h3>
             <p>Kinnan Scaping drove a fully loaded <strong>CAT skid loader</strong> repeatedly across our brand new, never-driven-on driveway. They cracked <strong>26 concrete panels</strong> and damaged it beyond repair. Then — instead of fixing it — they <strong>sued us</strong> for the remaining $6,443.40. They won. They got paid in full while we were left with a destroyed driveway that will cost <strong>$20,000+</strong> to replace.</p>
         </div>
     </div>
-</section>
+</header>
+
+<main>
 
 <!-- The Full Story -->
 <section>
