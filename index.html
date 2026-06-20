@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinnan Scaping | Omaha Landscaping Reviews &amp; Warning | Papillion, Gretna, Elkhorn</title>
-    <meta name="description" content="Read our Kinnan Scaping review — a $10,673 retaining wall project in Papillion, NE that ended with a destroyed new driveway, a lawsuit for $6,443, and a ruined concrete slab. All documented with photos.">
-    <meta name="keywords" content="Kinnan Scaping, Omaha landscaping, Papillion landscaping, Gretna landscaping, Elkhorn landscaping, Brandon Kinnan, Kinnan Scaping review, driveway damage, landscaping complaint">
-    <meta property="og:title" content="Kinnan Scaping | Omaha Landscaping Warning &amp; Review">
-    <meta property="og:description" content="Kinnan Scaping review: $10,673 wall project in Papillion, NE. Destroyed new driveway. $6,443 lawsuit. All documented with photos.">
-    <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/blob.png">
+    <title>Don't Use Kinnan Scaping — They Destroyed Our Driveway & Sued Us | Omaha Landscaping Warning</title>
+    <meta name="description" content="Kinnan Scaping drove a CAT skid loader across our brand new driveway, destroyed it, and then SUED US for $6,443. Read this before you hire Brandon Kinnan in Omaha, Gretna, Papillion, or Elkhorn NE.">
+    <meta name="keywords" content="Kinnan Scaping, Brandon Kinnan, Kinnan Scaping review, don't use Kinnan Scaping, Kinnan Scaping lawsuit, Kinnan Scaping Omaha, Gretna landscaping, Papillion landscaping, driveway damage, landscaping warning">
+    <link rel="canonical" href="https://kinnan-scaping.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kinnan Scaping Destroyed Our Driveway — Then Sued Us">
+    <meta property="og:description" content="They drove on our brand new driveway, cracked 26 panels, and then sued us for $6,443. Read the full warning.">
+    <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-19%20at%202.23.01%E2%80%AFPM.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-19%20at%205.10.48%E2%80%AFPM.png/:/rs=w:64,h:64,m">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K6VQVZT5Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0K6VQVZT5Q');
+    </script>
     
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         
         :root {
-            --bg: #0a0a0f;
-            --surface: #13131a;
-            --card: #1a1a26;
-            --border: #2a2a3a;
+            --bg: #08080d;
+            --surface: #111118;
+            --card: #181825;
+            --border: #252535;
             --text: #e8e8f0;
-            --muted: #8888a0;
-            --accent: #ff4444;
-            --accent-glow: rgba(255, 68, 68, 0.15);
+            --muted: #9090a8;
+            --accent: #dc2626;
+            --accent-bright: #ef4444;
             --gold: #f59e0b;
-            --gold-dim: rgba(245, 158, 11, 0.1);
             --radius: 12px;
         }
         
@@ -46,65 +57,98 @@
             padding: 0 24px;
         }
         
-        /* Hero */
+        /* HERO — full image background */
         .hero {
-            min-height: 80vh;
+            position: relative;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 80px 24px;
-            position: relative;
+            padding: 80px 24px 100px;
             overflow: hidden;
         }
         
-        .hero::before {
-            content: '';
+        .hero-bg {
             position: absolute;
             inset: 0;
-            background: radial-gradient(ellipse at 50% 0%, rgba(255, 68, 68, 0.08) 0%, transparent 70%);
-            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.35);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(220, 38, 38, 0.18) 0%,
+                rgba(8, 8, 13, 0.8) 70%,
+                rgba(8, 8, 13, 1) 100%
+            );
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
         }
         
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 8px 18px;
-            background: var(--gold-dim);
-            border: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 10px 24px;
+            background: rgba(220, 38, 38, 0.9);
+            border: 1px solid rgba(239, 68, 68, 0.5);
             border-radius: 100px;
             font-size: 14px;
-            font-weight: 600;
-            color: var(--gold);
-            margin-bottom: 32px;
-            letter-spacing: 1px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 28px;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 24px rgba(220, 38, 38, 0.4);
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-badge {
+            0%, 100% { box-shadow: 0 4px 24px rgba(220, 38, 38, 0.4); }
+            50% { box-shadow: 0 4px 40px rgba(220, 38, 38, 0.7); }
         }
         
         .hero h1 {
-            font-size: clamp(2.8rem, 8vw, 5rem);
+            font-size: clamp(3rem, 8vw, 5.5rem);
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #fff 0%, #ff6666 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #fff;
+            text-shadow: 0 2px 40px rgba(0,0,0,0.5);
+        }
+        
+        .hero h1 .accent {
+            color: var(--accent-bright);
         }
         
         .hero p {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            color: var(--muted);
+            font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+            color: rgba(255,255,255,0.75);
             max-width: 650px;
-            margin-bottom: 40px;
+            margin: 0 auto 36px;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.5);
         }
         
         .hero-stats {
             display: flex;
             gap: 48px;
-            margin-top: 20px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -114,49 +158,28 @@
         }
         
         .hero-stat .number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--accent);
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--accent-bright);
+            text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
         }
         
         .hero-stat .label {
-            font-size: 1.4rem;
+            font-size: 0.95rem;
             font-weight: 600;
-            color: var(--muted);
+            color: rgba(255,255,255,0.6);
             letter-spacing: 0.5px;
             margin-top: 2px;
         }
         
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-            opacity: 0.4;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(8px); }
-        }
-        
-    /* Sections */
-    section {
-        padding: 60px 0;
-    }
-
-    @media (max-width: 640px) {
-        section {
-            padding: 40px 0;
-        }
-    }
+        /* Sections */
+        section { padding: 60px 0; }
         
         .section-label {
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: var(--accent);
+            color: var(--accent-bright);
             font-weight: 700;
             margin-bottom: 8px;
         }
@@ -175,17 +198,11 @@
             margin-bottom: 32px;
         }
         
-        @media (max-width: 640px) {
-            .section-subtitle {
-                margin-bottom: 20px;
-            }
-        }
-        
         /* TL;DR Box */
         .tldr-box {
-            background: linear-gradient(135deg, var(--card), var(--surface));
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--accent);
+            background: linear-gradient(135deg, #1a0a0a, var(--card));
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-left: 5px solid var(--accent);
             border-radius: var(--radius);
             padding: 36px;
             margin-bottom: 60px;
@@ -195,15 +212,17 @@
             font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            color: var(--accent-bright);
         }
         
         .tldr-box p {
             font-size: 1.05rem;
             color: var(--muted);
             line-height: 1.8;
+        }
+        
+        .tldr-box p strong {
+            color: #fff;
         }
         
         /* Timeline */
@@ -219,12 +238,12 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: var(--border);
+            background: linear-gradient(180deg, var(--accent), var(--border));
         }
         
         .timeline-item {
             position: relative;
-            margin-bottom: 32px;
+            margin-bottom: 28px;
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
@@ -251,7 +270,7 @@
         
         .timeline-item .date {
             font-size: 13px;
-            color: var(--accent);
+            color: var(--accent-bright);
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -273,12 +292,12 @@
             display: inline-block;
             margin-top: 12px;
             padding: 4px 14px;
-            background: var(--accent-glow);
-            border: 1px solid rgba(255, 68, 68, 0.2);
+            background: rgba(220, 38, 38, 0.15);
+            border: 1px solid rgba(220, 38, 38, 0.3);
             border-radius: 6px;
             font-size: 14px;
             font-weight: 700;
-            color: var(--accent);
+            color: var(--accent-bright);
         }
         
         /* Gallery Grid */
@@ -300,7 +319,7 @@
         
         .gallery-item:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(255, 68, 68, 0.1);
+            box-shadow: 0 12px 40px rgba(220, 38, 38, 0.15);
         }
         
         .gallery-item img {
@@ -324,79 +343,47 @@
             color: var(--text);
         }
         
-        /* Full-width image */
-        .featured-image {
-            margin: 48px 0;
-            border-radius: var(--radius);
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background: var(--card);
-        }
-        
-        .featured-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .featured-image .caption {
-            padding: 20px 24px;
-            font-size: 0.95rem;
-            color: var(--muted);
-            text-align: center;
-        }
-        
         /* Verdict */
         .verdict {
-            background: linear-gradient(135deg, var(--card), var(--surface));
-            border: 1px solid var(--border);
+            background: linear-gradient(135deg, #1a0808, #0d0d15);
+            border: 1px solid rgba(220, 38, 38, 0.25);
             border-radius: var(--radius);
             padding: 48px;
             text-align: center;
             margin-top: 40px;
         }
         
+        .verdict .rating-num {
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--accent-bright);
+            line-height: 1;
+            margin-bottom: 4px;
+            text-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+        }
+        
         .verdict h2 {
             font-size: 2rem;
             font-weight: 800;
-            margin-bottom: 16px;
-        }
-        
-        .verdict .stars {
-            font-size: 1.8rem;
-            margin-bottom: 4px;
-            color: var(--muted);
-            letter-spacing: 2px;
-        }
-        
-        .verdict .rating-num {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--accent);
-            line-height: 1;
-            margin-bottom: 4px;
-        }
-        
-        .verdict .rating-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--muted);
-            margin-bottom: 20px;
+            margin: 12px 0 16px;
         }
         
         .verdict p {
             color: var(--muted);
-            max-width: 500px;
+            max-width: 520px;
             margin: 0 auto 24px;
             font-size: 1.05rem;
             line-height: 1.8;
         }
         
+        .verdict p strong {
+            color: var(--text);
+        }
+        
         .verdict .disclaimer {
             font-size: 0.85rem;
             color: var(--muted);
-            opacity: 0.6;
+            opacity: 0.5;
             border-top: 1px solid var(--border);
             padding-top: 20px;
             margin-top: 20px;
@@ -414,18 +401,7 @@
             font-size: 14px;
         }
         
-        /* Responsive */
-        @media (max-width: 640px) {
-            .hero { min-height: 70vh; padding: 60px 20px; }
-            .hero-stats { gap: 28px; }
-            .timeline { padding-left: 32px; }
-            .timeline-item::before { left: -25px; }
-            .gallery-grid { grid-template-columns: 1fr; }
-            .verdict { padding: 32px 20px; }
-            .tldr-box { padding: 24px; }
-        }
-        
-        /* Fade in on scroll (graceful) */
+        /* Fade in on scroll */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -438,6 +414,18 @@
         
         .fade-in:nth-child(2) { animation-delay: 0.15s; }
         .fade-in:nth-child(3) { animation-delay: 0.3s; }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            .hero { min-height: 90vh; padding: 60px 20px 80px; }
+            .hero-stats { gap: 28px; }
+            .timeline { padding-left: 32px; }
+            .timeline-item::before { left: -25px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .verdict { padding: 32px 20px; }
+            .tldr-box { padding: 24px; }
+            section { padding: 40px 0; }
+        }
     </style>
 
     <!-- Schema.org Structured Data -->
@@ -452,9 +440,7 @@
                 "@type": "PostalAddress",
                 "addressLocality": "Omaha",
                 "addressRegion": "NE"
-            },
-            "telephone": "",
-            "url": "https://kinnan-scaping.com"
+            }
         },
         "author": {
             "@type": "Person",
@@ -489,39 +475,23 @@
                 "name": "Did Kinnan Scaping sue you?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. After damaging our driveway and refusing to take responsibility, Kinnan Scaping sued us for the remaining balance of $6,443.40. We represented ourselves against their lawyer and lost."
+                    "text": "Yes. After damaging our driveway and refusing to take responsibility, Kinnan Scaping sued us for the remaining balance of $6,443.40. We represented ourselves against their lawyer and lost. They walked away with our money and we walked away with a destroyed driveway."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Should I hire Kinnan Scaping for landscaping work?",
+                "name": "Should I hire Kinnan Scaping in Omaha?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "We cannot recommend Kinnan Scaping. They damaged our new driveway, refused to make it right, and then sued us. Based on our experience, we would look elsewhere for landscaping services in the Omaha area."
+                    "text": "Based on our experience, absolutely not. They damaged our new driveway with heavy equipment, refused to make it right, and then sued us for the balance. If you're in Omaha, Gretna, Papillion, or Elkhorn, find a different landscaper."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How much did Kinnan Scaping charge for a retaining wall?",
+                "name": "How much did Kinnan Scaping sue you for?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The initial bid was $8,460 with a $4,230 deposit. After upsizing the wall, the total came to $10,673.40. After the dispute, they sued us and we were forced to pay the full remaining balance of $6,443.40."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Where does Kinnan Scaping operate?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kinnan Scaping serves the Omaha, Papillion, Gretna, and Elkhorn areas of Nebraska. Our project was at our home in Papillion, NE."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Did Kinnan Scaping fix the driveway they damaged?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. Kinnan Scaping refused to take responsibility for the damage beyond filing an insurance claim. We were left with a ruined driveway and had to pay for the full project balance after they sued us."
+                    "text": "Kinnan Scaping sued us for $6,443.40 — the remaining balance on a $10,673.40 retaining wall project, despite having caused thousands more in damage to our brand new concrete driveway."
                 }
             }
         ]
@@ -530,20 +500,33 @@
 </head>
 <body>
 
-<!-- Hero -->
+<!-- HERO -->
 <header class="hero">
-    <div class="hero-badge">⚠️ Warning — Real Customer Story</div>
-    <h1>Don't Use Kinnan Scaping</h1>
-    <p>We hired them to build a retaining wall. They destroyed our new driveway. Then they sued us for the balance. This is what happened.</p>
+    <div class="hero-bg">
+        <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-19%20at%202.23.01%E2%80%AFPM.png" alt="Cracked driveway destroyed by Kinnan Scaping in Omaha Nebraska">
+    </div>
+    <div class="hero-overlay"></div>
     
-    <div class="hero-stats">
-        <div class="hero-stat">
-            <div class="label">We were sued for</div>
-            <div class="number">$6,443</div>
+    <div class="hero-content">
+        <div class="hero-badge">⚠️ Don't Make Our Mistake</div>
+        <h1><span class="accent">Don't Use</span><br>Kinnan Scaping</h1>
+        <p>They destroyed our brand new driveway with a CAT skid loader, refused to fix it, and then <strong>sued us for $6,443.40</strong>. Read our story before you hire them in Omaha, Gretna, Papillion, or Elkhorn.</p>
+        
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="number">$6,443</div>
+                <div class="label">They Sued Us For</div>
+            </div>
+            <div class="hero-stat">
+                <div class="number">26</div>
+                <div class="label">Concrete Panels Cracked</div>
+            </div>
+            <div class="hero-stat">
+                <div class="number">$20K+</div>
+                <div class="label">Driveway Replacement Cost</div>
+            </div>
         </div>
     </div>
-    
-    <div class="scroll-indicator">↓</div>
 </header>
 
 <main>
@@ -552,10 +535,9 @@
 <section>
     <div class="container">
         <div class="tldr-box fade-in">
-            <h3>⚡ TL;DR (The Short Version)</h3>
-            <p>Kinnan Scaping drove a fully loaded CAT skid loader repeatedly across our brand new, never-driven-on driveway and damaged it beyond repair. They refused to take responsibility. Then they <strong>sued us</strong> for the remaining $6,443. We ended up with a ruined driveway while Kinnan got paid in full.</p>
+            <h3>⚡ TL;DR — What Kinnan Scaping Did to Us</h3>
+            <p>Kinnan Scaping drove a fully loaded <strong>CAT skid loader</strong> repeatedly across our brand new, never-driven-on driveway. They cracked <strong>26 concrete panels</strong> and damaged it beyond repair. Then — instead of fixing it — they <strong>sued us</strong> for the remaining $6,443.40. They won. They got paid in full while we were left with a destroyed driveway that will cost <strong>$20,000+</strong> to replace.</p>
         </div>
-        
     </div>
 </section>
 
@@ -564,48 +546,48 @@
     <div class="container">
         <div class="fade-in">
             <div class="section-label">📖 The Full Story</div>
-            <h2 class="section-title">How It All Went Wrong</h2>
-            <p class="section-subtitle">Our experience hiring a landscaper in the Omaha, Gretna, and Papillion area.</p>
+            <h2 class="section-title">How Kinnan Scaping Destroyed Our Driveway</h2>
+            <p class="section-subtitle">Our experience hiring Kinnan Scaping in Papillion, Nebraska — every detail documented.</p>
         </div>
         
         <div class="timeline">
             
             <div class="timeline-item fade-in">
                 <div class="date">Step 1</div>
-                <h3>We Met With Kyle</h3>
-                <p>We met with Kyle from Kinnan Scaping about a backyard retaining wall for the yard of our new home in Papillion. He provided renderings and an estimate for the requested work, which we accepted. The finished wall looked nothing like what they'd shown us.</p>
+                <h3>We Met With Kyle Kinnan</h3>
+                <p>We met with Kyle from Kinnan Scaping about a backyard retaining wall. He provided renderings and an estimate for the work, which we accepted. <strong>The finished wall looked nothing like what they promised.</strong></p>
             </div>
             
             <div class="timeline-item fade-in">
                 <div class="date">Step 2</div>
                 <h3>We Paid the Deposit</h3>
-                <p>We sent a check for <strong>$4,230</strong> — 50% deposit toward an initial bid of <strong>$8,460</strong>. After that, we upped the size of the wall, bringing the total to <strong>$10,673.40</strong>.</p>
-                <span class="amount">$4,230 Paid Upfront</span>
+                <p>We sent a check for <strong>$4,230</strong> — 50% deposit toward an initial bid of $8,460. After upsizing the wall, the total came to <strong>$10,673.40</strong>.</p>
+                <span class="amount">$4,230 Deposit Paid</span>
             </div>
             
             <div class="timeline-item fade-in">
                 <div class="date">June 18</div>
-                <h3>Driveway Was Poured</h3>
-                <p>Our house was still under construction. The new driveway was poured — brand new, never driven on. Our builder strictly prohibited any subcontractors from driving or parking on it.</p>
+                <h3>The Driveway Was Poured — Brand New</h3>
+                <p>Our house was under construction. The driveway was poured brand new — <strong>never driven on, not even once.</strong> Our builder strictly prohibited any subcontractors from driving or parking on it.</p>
             </div>
             
             <div class="timeline-item fade-in">
                 <div class="date">Monday, July 26</div>
-                <h3>Kinnan Began Work</h3>
-                <p>Kinnan Scaping started work on the retaining wall. Our builder had <strong>explicitly told them</strong> not to drive on the new driveway — yet they drove a fully loaded CAT skid loader back and forth across it anyway. The driveway had never been touched by a single vehicle before that day.</p>
+                <h3>Kinnan Started Work — And Immediately Destroys Our Driveway</h3>
+                <p>Kinnan Scaping arrived. Our builder had <strong>explicitly told them not to drive on the new driveway.</strong> They ignored this completely, driving a <strong>fully loaded CAT skid loader</strong> back and forth across the concrete. The driveway had never been touched by a single vehicle before that day. <strong>They destroyed it in hours.</strong></p>
             </div>
             
             <div class="timeline-item fade-in">
-                <div class="date">The Damage</div>
-                <h3>Driveway Destroyed</h3>
-                <p>The CAT skid loader had done more damage in a single afternoon than years of normal use would have. The driveway was beyond repair. Kinnan Scaping refused to take responsibility and wouldn't make it right.</p>
+                <div class="date">The Aftermath</div>
+                <h3>Cracks in 26 Panels, Pitting Everywhere</h3>
+                <p>We found <strong>cracks on 26 concrete panels</strong>, plus pitting throughout the entire driveway and a chip on our rear patio. The CAT skid loader had done more damage in one afternoon than years of normal use would cause. And Kinnan Scaping? <strong>They refused to take responsibility for any of it.</strong></p>
             </div>
             
             <div class="timeline-item fade-in">
-                <div class="date">The Final Insult</div>
+                <div class="date">The Lawsuit</div>
                 <h3>They Sued Us — And Won</h3>
-                <p>In the end, Kinnan Scaping <strong>sued us</strong> for the balance — <strong>$6,443.40</strong>. I represented myself against their lawyer and lost. We had to pay every dollar. Kinnan was made whole while we were left with a destroyed driveway and no recourse.</p>
-                <span class="amount">Sued & Forced to Pay $6,443</span>
+                <p>Rather than fix what they broke, Kinnan Scaping <strong>sued us for the balance — $6,443.40.</strong> I represented myself against their lawyer and lost. We were forced to pay every dollar. Kinnan walked away with our money. We walked away with a destroyed driveway.</p>
+                <span class="amount">They Sued Us for $6,443.40</span>
             </div>
         </div>
     </div>
@@ -615,38 +597,38 @@
 <section>
     <div class="container">
         <div class="fade-in">
-            <div class="section-label">📸 Evidence</div>
-            <h2 class="section-title">The Damage in Pictures</h2>
-            <p class="section-subtitle">The damage in pictures — serving as a warning for homeowners in Omaha, Elkhorn, Gretna, and beyond.</p>
+            <div class="section-label">📸 The Damage</div>
+            <h2 class="section-title">See For Yourself</h2>
+            <p class="section-subtitle">This is what Kinnan Scaping did to our brand new driveway. Every photo is real. Every crack is still there.</p>
         </div>
         
         <div class="gallery-grid">
             
             <div class="gallery-item fade-in">
-                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Wall%20Rough%20Draft%203.JPEG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Kinnan Scaping retaining wall rendering Omaha NE — promised wall design vs what was actually built" loading="lazy">
+                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-19%20at%202.23.01%E2%80%AFPM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Cracked concrete driveway in Papillion NE destroyed by Kinnan Scaping skid loader" loading="lazy">
                 <div class="caption">
-                    <p><strong>The rendering we were shown</strong> — the finished wall looked nothing like this. What they delivered didn't match the design they sold us on.</p>
+                    <p><strong>Our brand new driveway</strong> after Kinnan was done with it. 26 cracked panels. Never driven on before they showed up.</p>
                 </div>
             </div>
             
             <div class="gallery-item fade-in">
-                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-19%20at%202.23.01%E2%80%AFPM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Damaged concrete driveway in Papillion NE after Kinnan Scaping skid loader drove on new concrete" loading="lazy">
+                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/blob.png/:/rs=w:800,h:600,cg:true" alt="CAT skid loader on new driveway — Kinnan Scaping heavy equipment on fresh concrete" loading="lazy">
                 <div class="caption">
-                    <p><strong>Our brand new driveway</strong> — never driven on, until Kinnan showed up. This is what it looked like after they were done with it.</p>
+                    <p><strong>The CAT skid loader that destroyed it.</strong> They could have gone around the other side — there was nothing blocking them. They chose to drive on fresh concrete.</p>
                 </div>
             </div>
             
             <div class="gallery-item fade-in">
-                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/blob.png/:/rs=w:800,h:600,cg:true" alt="CAT skid loader on new driveway in Papillion Nebraska — Kinnan Scaping construction equipment damage" loading="lazy">
+                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Wall%20Rough%20Draft%203.JPEG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Kinnan Scaping retaining wall rendering — what they promised vs what they built" loading="lazy">
                 <div class="caption">
-                    <p><strong>The machine that did it</strong> — a fully loaded CAT skid loader on our brand new driveway. The other side of the home had no construction and nothing blocking their path, yet they chose to drive on the fresh concrete anyway.</p>
+                    <p><strong>The rendering we were sold</strong> — a beautiful wall. What they built looked nothing like it. Subpar work from start to finish.</p>
                 </div>
             </div>
             
             <div class="gallery-item fade-in">
-                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-20%20at%208.36.08%E2%80%AFPM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Cracked and damaged concrete driveway in Omaha NE two years after Kinnan Scaping skid loader damage" loading="lazy">
+                <img src="https://img1.wsimg.com/isteam/ip/950b030f-1041-4069-8c0c-ba1c862baac9/Screenshot%202024-05-20%20at%208.36.08%E2%80%AFPM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:800,h:600,cg:true" alt="Driveway still cracked 2 years later after Kinnan Scaping damage — Omaha NE" loading="lazy">
                 <div class="caption">
-                    <p><strong>Two years later</strong> — we've had the largest cracks professionally sealed and are limping the driveway along until we can replace it. It's the only driveway on our block like this.</p>
+                    <p><strong>Two years later.</strong> We've sealed the worst cracks but we're limping this driveway along. It's the only one on our block like this. <strong>$20,000+</strong> to replace.</p>
                 </div>
             </div>
             
@@ -654,22 +636,20 @@
     </div>
 </section>
 
-
-
 <!-- Verdict -->
 <section>
     <div class="container">
         <div class="verdict fade-in">
             <div class="rating-num">0 / 5</div>
-            <h2>Our Verdict</h2>
+            <h2>We Cannot Recommend Kinnan Scaping</h2>
             <p>
-                <strong>We cannot recommend Kinnan Scaping.</strong> They damaged our new driveway, refused to make it right, and then sued us for the remaining balance. We had to pay in full while living with a ruined driveway.
+                <strong>They destroyed our brand new driveway. They refused to fix it. They sued us — and won.</strong> If you're in Omaha, Papillion, Gretna, Elkhorn, or anywhere nearby, read our story before you hire Kinnan Scaping. We wish someone had warned us.
             </p>
             <p>
-                If you're in Omaha, Papillion, Gretna, Elkhorn, or the surrounding area, this is our story. Read it, share it, and make your own informed decision.
+                Share this with anyone considering them for landscaping work. The photo at the top of this page is our driveway. It's still cracked today.
             </p>
             <div class="disclaimer">
-                All dates, costs, and damages in this review are factual. This is our experience and our opinion. Please do your own research before choosing a landscaping service.
+                All dates, costs, and damages described here are factual. This review reflects our personal experience with Kinnan Scaping. We encourage you to do your own research before hiring any landscaping contractor.
             </div>
         </div>
     </div>
@@ -680,8 +660,7 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>Copyright © 2024 Don't Use Kinnan Scaping — All Rights Reserved.</p>
-        <p style="margin-top: 8px; font-size: 12px; opacity: 0.5;">Powered by truth, not GoDaddy.</p>
+        <p>Copyright &copy; 2024 Don't Use Kinnan Scaping — All Rights Reserved.</p>
     </div>
 </footer>
 
